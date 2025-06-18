@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: #e0f7fa; 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .list-item:last-child {
+            border-bottom: none;
+        }
+        .list-item input[type="text"] {
+            width: calc(100% - 120px);
+            padding: 5px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .list-item button {
+            margin: 0 5px;
+        }
+        .list-item.completed input[type="text"] {
+            text-decoration: line-through;
+            color: #888;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic List Manager</h1>
+        <input type="text" id="new-item-input" placeholder="Add a new item">
+        <button id="add-btn">Add Item</button>
+        <ul id="item-list" class="item-list"></ul>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>
