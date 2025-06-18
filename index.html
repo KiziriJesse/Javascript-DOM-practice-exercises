@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+           
+        }
+
+        .container {
+            text-align: center;
+            background:#e0f7fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }    
+
+        .controls {
+            margin-bottom: 20px;
+        }
+        .text-box {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Change Text Style</h1>
+    <div class="controls">
+        <label for="font-size">Font Size:</label>
+        <select id="font-size">
+            <option value="12px">12px</option>
+            <option value="16px">16px</option>
+            <option value="20px">20px</option>
+            <option value="24px">24px</option>
+            <option value="28px">28px</option>
+        </select>
+
+        <label for="font-color">Font Color:</label>
+        <select id="font-color">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="purple">Purple</option>
+        </select>
+
+        <label for="font-family">Font Family:</label>
+        <select id="font-family">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Times New Roman, serif">Times New Roman</option>
+            <option value="Courier New, monospace">Courier New</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="Georgia, serif">Georgia</option>
+        </select>
+    </div>
+
+    <div class="text-box" id="text-box">
+        <h2>Change Text Style here</h2>
+        This is a sample text block. You can change its style using the dropdown menus above.  mollitia corrupti totam cupiditate, esse adipisci fuga nemo 
+
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
