@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Table Row</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: #e0f7fa; 
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Filter Table Rows</h1>
+        <input type="text" id="search-bar" placeholder="Search...">
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kiziri Jesse</td>
+                    <td>25</td>
+                    <td>Naalya</td>
+                </tr>
+                <tr>
+                    <td>Simon Peter</td>
+                    <td>32</td>
+                    <td>Naalya</td>
+                </tr>
+                <tr>
+                    <td>Grace</td>
+                    <td>28</td>
+                    <td>Namungoona</td>
+                </tr>
+                <tr>
+                    <td>HIlda</td>
+                    <td>29</td>
+                    <td>Ntinda</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script4.js"></script>
+</body>
+</html>
