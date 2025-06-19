@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: rgba(8, 7, 7, 0.942); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: white;
+        }
+        .carousel {
+            position: relative;
+            max-width: 500px;
+            margin: auto;
+        }
+        .carousel img {
+            width: 100%;
+            display: none;
+            border-radius: 5px;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .buttons button {
+            margin: 0 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Carousel</h1>
+        <div class="carousel">
+            <img src="img1.png" class="active" alt="Image 1">
+            <img src="img2.png" alt="Image 2">
+            <img src="img3.png" alt="Image 3">
+            <img src="img4.png" alt="Image 4">
+        </div>
+        <div class="buttons">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <script src="script5.js"></script>
+</body>
+</html>
